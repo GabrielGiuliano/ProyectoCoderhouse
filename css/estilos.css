@@ -73,8 +73,8 @@ body {
 
 
 .nav-derecha ul li a:hover {
-    background-color:blueviolet);
-    border: 5px solid green;
+    background-color:yellow;
+    border: 5px solid gray;
     border-radius: 25px;
     color: wheat;
     font-size: 17px;
@@ -120,6 +120,13 @@ main{
     border: 3px solid black;
     
 }
+
+.fondomaininicio{
+    background-image: linear-gradient(to left, red, yellow, green);
+}
+
+
+
 /*Media Querys */
 @media screen and(max-width:768px) {
     .nav{
@@ -152,9 +159,25 @@ main{
     height: 100%;
     background-color: cornflowerblue;
 }
+}
 
 
 
+@media screen and (max-width:425px) {
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 100% 50%;
+        width: 100%;
+        height: 120px;
+        background-color: red;
+    }
 
-
+    .nav-derecha {
+        display: grid;
+        align-items: center;
+        height: 100%;
+        background-color: red;
+    }
+} 
 <<
