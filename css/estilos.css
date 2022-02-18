@@ -3,6 +3,14 @@ body {
     padding: 0;
     width: auto;    /*Largo de la pantalla*/
 }
+header{
+    display: flex;
+    padding: 1 rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
 .fondoheader{
     width: 100%;
     height: 200px;
@@ -22,6 +30,11 @@ body {
     display: flex;
 }
 
+.container{
+    margin:1rem;
+    padding:2 rem;
+}
+
 .nav img {
     width: 100px;
     height: 50px;
@@ -36,7 +49,7 @@ body {
 .nav-izquierda-texto{
     display: flex;
     color: white;
-    justify-self: center;
+    
 }
 
 .nav-izquierda-texto h3{
@@ -44,12 +57,15 @@ body {
     align-items: center;
     margin-left: 15px;
     color: black;
+    justify-content: flex-end;
 }
 
 .nav-derecha{
     display: grid;
-    align-items: center;
+    align-items:flex-end;
     height: 100%;
+
+    
     
 }
 
@@ -78,6 +94,10 @@ body {
     border-radius: 25px;
     color: wheat;
     font-size: 17px;
+}
+.img-carrusel{
+    height: 40 vh;
+    object-fit: cover;
 }
 
 .fondopromos img{
