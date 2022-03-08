@@ -1,64 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="../css/main.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>promos</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-    crossorigin="anonymous">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promos de Picatutti</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Promos picada Picatutti" >
+  <meta name="keywords" content="Picadas, fiambres, queso, jamom, promos, combos"> 
 </head>
+<link rel="stylesheet" href="../css/main.css">
+
 <body>
 
-    <header class="fondoheader">
-        <nav class="nav-derecha">
-            <ul>
-                <li> <a href="#">Promos</a></li>
-                <li> <a href="contacto.html">Contacto</a></li>
-                <li> <a href="pedidos.html">Pedidos</a></li>
-                <li> <a href="../index.html"> Inicio</a></li>
-                <li> <a href="quienessomos.html">Quienes Somos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="fondopromos">  
-    <li>Para 2</li>
-    <img src="../img/picadaPara2.jpg" class="imagenespicadas" alt="Para 2" title="Para 2">
-    <li>Para 2 con cerveza </li>
-    <img src="../img/picadaPara2Cerveza.jpeg" class="imagenespicadas" alt="Para 2 con cerveza" title="Para 2 con cerveza">
-    <li>Para 3</li>
-    <img src="../img/picadaPara3.jpg" class="imagenespicadas" alt="Para 3" title="Para 3">
-    <li>Para 4 con cerveza </li>
-    <img src="../img/picadaPara4Cerveza.jpg" class="imagenespicadas" alt="Para 4 con cerveza" title="Para 4 con cerveza">
-    <li>Para 5</li>
-    <img src="../img/picadaPara5.jpg" class="imagenespicadas" alt="Para 5" title="Para 5">
-     <li>Para 8</li>
-    <img src="../img/picadaPara8.jpg" class="imagenespicadas" alt="Para 8" title="Para 8">
+  <header class="fondoheader">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> <img src="/img/logo_small.png" alt="" class="logo" width="200"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Promos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pedidos.html">Pedidos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./quienessomos.html">Quienes Somos</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Para poner las cards en filas, 
+    podemos usar flex o la parte de layout de bs: https://getbootstrap.com/docs/5.1/layout/grid/
+    Dejo 2 con una forma y 4 con la otra  -->
+
+  <div class="fondopromos">
+    <!-- Primer ejemplo -->
+    <!-- al usar flex conseguimos que queden una al lado de la otra, 
+    para terminar de acomodarlas podemos usar propiedades de flex o box model (margin, padding) 
+    Luego para el responsive podríamos armar una media query para pasarlas a column o darle un flex wrap 
+    así se acomodan
+  -->
+    <div style="display: flex;">
+      <div class="card" style="width: 18rem;">
+        <img src="../img/picadaPara2.jpeg" class="card-img-top" alt="Para 2" title="Para 2">
+        <div class="card-body">
+          <p class="card-text">Para 2</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/picadaPara2Cerveza.jpeg" class="card-img-top" alt="Para 2 con cerveza" title="Para 2 con cerveza">
+        <div class="card-body">
+          <p class="card-text">Para 2 con cerveza</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Segundo ejemplo -->
+    <!-- Para este seguí la estrusctura de ejemplo de la página de bs: https://getbootstrap.com/docs/5.1/layout/grid/
+
+    Nos muestra esto: 
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          Column
+        </div>
+        <div class="col">
+          Column
+        </div>
+        <div class="col">
+          Column
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container-fluid">
+      <div class="row">
+    <!-- Cada div que dice col sería nuestra cad,
+    si seguimos esta página sobre breakpoints:https://getbootstrap.com/docs/5.1/layout/breakpoints/  
+    Tenemos que col solo sirve para las pantallas más chicas y md para las que son medias en adelante-->
+        <div class="card col-12 col-md-4" style="width: 18rem;">
+          <!-- Entonces, col-12 significa que cuando la pantalla sea chica cada card va a ocupar las 12 columnas del contenedor
+          Y col-md-4 significa que para pantallas medias en adelante va a ocupar 4 columnas
+          Al hacer esto, logramos que cuando la pantalla se achica las card se ponen una abajo de la otra y,
+          cuando la pantalla es un poco más grande, se colocan una al lado de la otra, así que tendríamos las cards responsive :D -->
+          <img src="../img/picadaPara3.jpeg" class="card-img-top" alt="Para 3" title="Para 3">
+            <div class="card-body">
+            <p class="card-text">Para 3</p>
+          </div>
+        </div>
+        <div class="card col-12 col-md-4" style="width: 18rem;">
+          <img src="../img/picadaPara4Cerveza.jpeg" class="card-img-top" alt="Para 4 con cerveza" title="Para 4 con cerveza">
+          <div class="card-body">
+            <p class="card-text">Para 4 con cerveza</p>
+          </div>
+        </div>
+        <div class="card col-12 col-md-4" style="width: 18rem;">
+          <img src="../img/picadaPara5.jpeg" class="card-img-top" alt="Para 5" title="Para 5">
+          <div class="card-body">
+            <p class="card-text">Para 5</p>
+          </div>
+        </div>
+        <div class="card col-12 col-md-4" style="width: 18rem;">
+          <img src="../img/picadaPara8.jpeg" class="card-img-top" alt="Para 8" title="Para 8">
+          <div class="card-body">
+            <p class="card-text">Para 8</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <footer class="footercolor"> 
-        <p>Copyright 2022</p>
-        <a href="https://www.instagram.com"> <img src="../img/instagramlogo.jpg" alt="Nuestro Instragram"class="logosredes"></a>
-    <a href="https://www.facebook.com"> <img src="../img/FacebookLogo.jpg" alt="Nuestro Facebook"class="logosredes"></a>
-    </footer>
+  </div>
+
+
+  </div>
+
+  <footer class="footercolor">
+    <p>Copyright 2022</p>
+    <a href="https://www.instagram.com"> <img src="../img/instagramlogo.jpg" alt="Nuestro Instragram"
+        class="logosredes"></a>
+    <a href="https://www.facebook.com"> <img src="../img/FacebookLogo.jpg" alt="Nuestro Facebook"
+        class="logosredes"></a>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
