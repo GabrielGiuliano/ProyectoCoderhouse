@@ -1,0 +1,211 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+    
+}
+header{
+    display: flex;
+    padding: 1 rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+.fondoheader{
+    width: 100%;    
+    height: 200px;
+    background-color: mintcream;
+}
+.nav{
+    display: grid;
+    grid-template-columns: 250px auto;/* marco los tamaños del nav*/
+    
+    border: 3px solid black;
+    width: 100%;
+}
+
+.nav-izquierda{
+    display: flex;
+    grid-column: 50% 50%;
+    display: flex;
+}
+
+.container{
+    margin:1rem;
+    padding:2 rem; 
+}
+
+.nav img {
+    width: 100px;
+    height: 50px;
+    /*align-self: center;*/
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.nav h2{
+    margin-left: 25px;
+}
+
+.nav-izquierda-texto{
+    display: flex;
+    color: white;  
+    
+}
+
+.nav-izquierda-texto h3{
+    display: grid;
+    align-items: center;
+    margin-left: 15px;
+    color: black;
+    justify-content: flex-end;
+}
+
+.nav-derecha{
+    display: grid;
+    align-items:flex-end;
+    height: 100%;
+
+    
+    
+}
+
+.nav-derecha ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 2rem;
+    
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.nav-derecha ul li a{
+    display: flex;
+    margin-left: 8rem;
+    justify-content: end;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+
+.nav-derecha ul li a:hover {
+    background-color:yellow;
+    border: 5px solid gray;
+    border-radius: 25px;
+    color: wheat;
+    font-size: 17px;
+}
+.img-carrusel{
+    height: 40 vh;
+    object-fit: cover;
+}
+
+.fondopromos img{
+    height: 250px;
+    width: 400px;
+    
+
+}
+.fondopromos{
+    background-color: #752a07;
+}
+.divinstrucciones{
+    background-color: lightslategrey;
+}
+
+.quienessomos{
+    background-color:moccasin;
+}
+
+main img{
+    height: 200px;
+    width: 300px;
+}
+
+main ul{
+    list-style: none;
+}
+
+footer img{
+    
+    height: 100px;
+    width: 160px;
+}
+.footercolor{
+    background-color: tomato;
+    padding: 2 rem;
+    text-align: center;
+}
+.fieldset{
+    background-color: tan;
+}
+main{
+    border: 3px solid black;
+    
+}
+
+.fondomaininicio{
+/*    background-image: linear-gradient(to left, red, yellow, green);*/
+}
+
+
+
+/*Media Querys */
+@media screen and(max-width:768px) {
+    .nav{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 100% 50%;
+        width: 100%;
+        height: 120px;
+        background-color: cornflowerblue;
+}
+.nav-derecha{
+    display: grid;
+    align-items: center;
+    height: 100%;
+    background-color: cornflowerblue;
+
+}
+@media screen and (max-width:425px) {
+    .nav{
+        display: grid; 
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 100% 50%;
+        width: 100%;
+        height: 120px;
+        background-color: cornflowerblue;
+}
+.nav-derecha{
+    display: grid;
+    align-items: center;
+    height: 100%;
+    background-color: cornflowerblue;
+}
+}
+
+
+
+@media screen and (max-width:425px) {
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 100% 50%;
+        width: 100%;
+        height: 120px;
+        background-color: red;
+    }
+
+    .nav-derecha {
+        display: grid;
+        align-items: center;
+        height: 100%;
+        background-color: red;
+    }
+
+}
